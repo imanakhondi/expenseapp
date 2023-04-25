@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Splashscreen = () => {
-  //   const [show, setShow] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
     let timerId;

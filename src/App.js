@@ -9,6 +9,7 @@ import AddExpense from "./pages/AddExpense";
 import TransactionDetails from "./pages/TransactionDetails";
 import Wallet from "./pages/Wallet";
 import Chart from "./pages/Chart";
+import MasterPage from "./pages/MasraerPage";
 
 function App() {
   return (
@@ -19,13 +20,18 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Splashscreen />} />
-        <Route path="/home" element={<Homepage />} />
         <Route path="/onboarding" element={<Onboarding />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/addExpense" element={<AddExpense />} />
-        <Route path="/transactionDetails/:id" element={<TransactionDetails />} />
-        <Route path="/wallet" element={<Wallet />} />
-        <Route path="/chart" element={<Chart />} />
+        <Route path="/panel" element={<MasterPage />}>
+          <Route path="wallet" element={<Wallet />} />
+          <Route path="home" element={<Homepage />} />
+          <Route path="chart" element={<Chart />} />
+          <Route path="profile" element={<Profile />} />
+          <Route
+            path="transactionDetails/:id"
+            element={<TransactionDetails />}
+          />
+          <Route path="addExpense" element={<AddExpense />} />
+        </Route>
       </Routes>
     </div>
   );

@@ -1,6 +1,6 @@
 import { AiOutlineBell } from "react-icons/ai";
 import {
-  MdKeyboardArrowLeft,
+  
   MdLock,
   MdMailOutline,
   MdPeople,
@@ -9,25 +9,13 @@ import {
 } from "react-icons/md";
 import woman from "../images/Woman 1.png";
 import diamond from "../images/diamond (dark).png";
-import Footer from "../components/Footer";
+import Header from "../components/Header";
 const Profile = () => {
   return (
-    <div className=" relative w-[420px] h-[890px] flex flex-col items-center bg-white font-semibold">
-      <div className=" h-[280px] bg-gradient-to-r from-[#429690] to-[#2A7C76] w-full clip-path-circle ">
-        <div className="flex justify-between items-center px-5 bg-groupimg bg-no-repeat h-[200px] text-white">
-          <div className="flex flex-col items-start ">
-            <MdKeyboardArrowLeft size={24} />
-          </div>
-          <div className="flex flex-col items-start ">
-            <p className="font-semibold text-x">Profile</p>
-          </div>
-          <div className="bg-[#ffffff3d] p-1 rounded-lg">
-            <AiOutlineBell size={24} />
-          </div>
-        </div>
-      </div>
-      {/* General Profile */}
-      <div className=" absolute flex flex-col justify-between items-center top-52  mx-auto rounded-xl p-3 text-white ">
+   
+    <>
+    <Header title="Profile" icon={<AiOutlineBell size={22} />} />
+      <div className=" absolute flex flex-col justify-between items-center top-56  mx-auto rounded-xl p-3 text-white ">
         <div className="flex justify-between items-center">
           <div className="">
             <img
@@ -71,8 +59,7 @@ const Profile = () => {
           <span className="ml-5 font-medium">Data and privacy</span>
         </li>
       </ul>
-      <Footer />
-    </div>
+    </>
   );
 };
 

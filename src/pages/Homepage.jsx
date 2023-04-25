@@ -9,10 +9,8 @@ const Homepage = () => {
   );
   const [expense, setExpense] = useState(0);
   const [income, setIncome] = useState(0);
-  // let newArray;
 
   useEffect(() => {
-    // const items = JSON.parse(localStorage.getItem("transactions"));
     if (transactions) {
       setTransactions(
         transactions.sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -26,7 +24,6 @@ const Homepage = () => {
   const update = () => {
     console.log(transactions);
     transactions.map((transaction) => {
-      //  return console.log("Transaction", transactions.length, transaction);
       return transaction.state === "Income"
         ? setIncome((prevstate) => prevstate + parseInt(transaction.price))
         : setExpense((prevstate) => prevstate + parseInt(transaction.price));
@@ -100,7 +97,7 @@ const Homepage = () => {
           <p className="font-bold text-lg text-[#222222]">
             Transactions history
           </p>
-          <Link to="/wallet">
+          <Link to="/panel/wallet">
             <p className=" text-sm text-[#666666] font-light cursor-pointer">
               See all
             </p>
@@ -110,7 +107,7 @@ const Homepage = () => {
           filterdTrans.map((transaction) => {
             return transaction.state === "Income" ? (
               <Link
-                to={`/transactionDetails/${transaction.id}`}
+                to={`/panel/transactionDetails/${transaction.id}`}
                 key={transaction.id}
                 target="_blank"
               >
@@ -130,7 +127,7 @@ const Homepage = () => {
               </Link>
             ) : (
               <Link
-                to={`/transactionDetails/${transaction.id}`}
+                to={`/panel/transactionDetails/${transaction.id}`}
                 key={transaction.id}
                 target="_blank"
               >
@@ -149,40 +146,13 @@ const Homepage = () => {
                 </div>
               </Link>
             );
-            // if (transaction.state === "Income") {
-            //   return (
-            //     <div className="flex items-center justify-between mb-3 ">
-            //       <div className="flex flex-col items-start">
-            //         <p className="font-semibold text-black">
-            //           {transaction.text}
-            //         </p>
-            //         <p className=" text-sm text-[#666666]">Today</p>
-            //       </div>
-            //       <p className=" text-lg font-semibold text-green-500">
-            //         + $ {transaction.price}
-            //       </p>
-            //     </div>
-            //   );
-            // } else if (transaction.state === "Expense") {
-            //   return (
-            //     <div className="flex items-center justify-between mb-3 ">
-            //       <div className="flex flex-col items-start">
-            //         <p className="font-semibold text-black">
-            //           {transaction.text}
-            //         </p>
-            //         <p className=" text-sm text-[#666666]">Yesterday</p>
-            //       </div>
-            //       <p className=" text-lg font-semibold text-red-500">
-            //         - $ {transaction.price}
-            //       </p>
-            //     </div>
-            //   );
-            // }
+         
           })
         ) : (
           <p className="text-red-500 mt-10">There are no transactions</p>
         )}
       </div>
+
       <Footer />
     </div>
   );

@@ -26,10 +26,8 @@ const AddTransActionComponent = ({  addTodoHandler, update }) => {
   };
 
   const submitHandler = (e) => {
-    // console.log("kasra");
     e.preventDefault();
     addTodoHandler(description, amount, type.selectedOption,date,time);
-    // update(type.selectedOption, parseInt(amount));
     setDescription("");
     setAmount("");
     setDate("");
@@ -122,41 +120,7 @@ const AddTransActionComponent = ({  addTodoHandler, update }) => {
         Add Expense
       </button>
     </form>
-    // <div>
-    //   <form className={styles.container} onSubmit={submitHandler}>
-    //     <input
-    //       type="number"
-    //       placeholder="Amount"
-    //       onChange={amountChange}
-    //       value={amount}
-    //     />
-    //     <input
-    //       type="text"
-    //       placeholder="Description"
-    //       onChange={descriptionChange}
-    //       value={description}
-    //     />
-    //     <div>
-    //       <input
-    //         type="radio"
-    //         checked={type.selectedOption === "expense"}
-    //         onChange={onValueChange}
-    //         id="expense"
-    //         value="Expense"
-    //       />
-    //        <label for="expense">Expense</label>
-    //       <input
-    //         type="radio"
-    //         checked={type.selectedOption === "income"}
-    //         onChange={onValueChange}
-    //         id="income"
-    //         value="Income"
-    //       />
-    //        <label for="income">Income</label>
-    //     </div>
-    //     <button type="submit">add</button>
-    //   </form>
-    // </div>
+   
   );
 };
 

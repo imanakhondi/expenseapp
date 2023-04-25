@@ -39,14 +39,11 @@ const ExpenseApp = () => {
   };
 
   const filtered = (search) => {
-    // console.log(e.target.value);
 if (search === "" || !search) {
   console.log(search);
   setFilterTransactions(transactions)
   return ;
 }else{
-  // const filterTransactions=[...transactions]
-  // console.log(filterTransactions);
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.text.toLowerCase().includes(search.toLowerCase())
   );

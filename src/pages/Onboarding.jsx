@@ -16,7 +16,7 @@ const Onboarding = () => {
         <h1 className="text-primary mt-5 mb-3 px-16 text-4xl font-bold">
           spend smarter save more
         </h1>
-        <Link to="/home">
+        <Link to="/panel/home">
           <button className=" bg-primary text-lg shadow-[0px_12px_19px_0px_#3E7C78] font-semibold text-white w-80 rounded-full py-5 ">
             Get Started
           </button>
