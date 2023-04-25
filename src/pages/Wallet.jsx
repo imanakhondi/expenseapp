@@ -5,19 +5,17 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Wallet = () => {
-  const [transactions, setTransactions] = useState(
-    JSON.parse(localStorage.getItem("transactions")) || []
-  );
+  const [transactions, setTransactions] = useState([]);
   useEffect(() => {
-    if (transactions.length) {
-      const sortTrans = transactions.sort(
+    const items = JSON.parse(localStorage.getItem("transactions"));
+    if (items) {
+      const sortTrans = items.sort(
         (a, b) => new Date(b.date) - new Date(a.date)
       );
       setTransactions(sortTrans);
-      console.log(transactions);
     }
   }, []);
-  console.log("transactions", transactions);
+ 
   const [trans, setTrans] = useState(true);
   const [upcoms, setUpcoms] = useState(false);
 

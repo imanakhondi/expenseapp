@@ -20,7 +20,7 @@ const Footer = () => {
         </li>
       </NavLink>
       <NavLink
-        to="/"
+        to="/chart"
         className={(navdata) => {
           return navdata.isActive ? "text-primary" : "text-[#aaaaaa]";
         }}

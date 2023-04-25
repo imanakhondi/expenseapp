@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import AddExpense from "./pages/AddExpense";
 import TransactionDetails from "./pages/TransactionDetails";
 import Wallet from "./pages/Wallet";
+import Chart from "./pages/Chart";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/addExpense" element={<AddExpense />} />
         <Route path="/transactionDetails/:id" element={<TransactionDetails />} />
         <Route path="/wallet" element={<Wallet />} />
+        <Route path="/chart" element={<Chart />} />
       </Routes>
     </div>
   );
