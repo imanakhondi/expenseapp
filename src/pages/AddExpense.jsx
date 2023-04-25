@@ -66,7 +66,7 @@ const AddExpense = () => {
   // }
 
   return (
-    <div className=" relative w-96 h-[790px] flex flex-col items-center bg-white font-semibold">
+    <div className=" relative w-[420px] h-[890px] flex flex-col items-center bg-white font-semibold">
       <div className=" h-[280px] bg-gradient-to-r from-[#429690] to-[#2A7C76] w-full clip-path-circle ">
         <div className="flex justify-between items-center px-5 bg-groupimg bg-no-repeat h-[200px] text-white">
           <div className="flex flex-col items-start ">
@@ -81,7 +81,7 @@ const AddExpense = () => {
         </div>
       </div>
       {/* General Profile */}
-      <div className=" absolute flex flex-col justify-between items-center top-40  mx-auto rounded-2xl h-[500px] p-3 bg-white text-[#666666] w-[350px] shadow-[0_10px_20px_0_#00000038]">
+      <div className=" absolute flex flex-col justify-between items-center top-40  mx-auto rounded-2xl h-[600px] p-3 bg-white text-[#666666] w-[350px] shadow-[0_10px_20px_0_#00000038]">
         {/* <form action="" className="w-full h-full flex flex-col justify-evenly">
           <div className="flex flex-col items-start mb-4">
             <label htmlFor="" className=" font-normal text-sm mb-2">

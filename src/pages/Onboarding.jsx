@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import image from "../images/Group 1.png";
 const Onboarding = () => {
   return (
-    <div className=" w-96 h-[790px] flex flex-col  bg-white font-semibold">
-      <div className=" flex items-center justify-center h-[530px] bg-[#EEF8F7] w-full clip-path-style">
+    <div className=" w-[420px] h-[890px] flex flex-col  bg-white font-semibold">
+      <div className=" flex items-center justify-center h-[630px] bg-[#EEF8F7] w-full clip-path-style">
         <div className=" w-[550px] h-[550px] border border-white rounded-full flex items-center justify-center absolute">
           <div className=" w-[450px] h-[450px] border border-white rounded-full flex items-center justify-center relative">
             <div className="flex items-center justify-center w-[350px] h-[350px] border border-white rounded-full ">

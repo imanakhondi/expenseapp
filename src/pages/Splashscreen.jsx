@@ -23,7 +23,7 @@ const Splashscreen = () => {
     };
   }, []);
   return (
-    <div className=" w-96 h-[690px] bg-primary flex flex-col items-center justify-center text-white ">
+    <div className=" w-[420px] h-[890px] bg-primary flex flex-col items-center justify-center text-white ">
       <h1 className=" text-2xl font-semibold mb-3">EXPENSE TRACKER</h1>
       <p>Press a key and wait...</p>
       <div className="grid justify-center items-center mt-10">

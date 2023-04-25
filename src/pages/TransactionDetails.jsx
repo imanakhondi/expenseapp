@@ -21,7 +21,7 @@ const TransactionDetails = () => {
   );
   console.log(filteredTransaction);
   return (
-    <div className=" relative w-96 h-[790px] flex flex-col items-center bg-white font-semibold">
+    <div className=" relative w-[420px] h-[890px] flex flex-col items-center bg-white font-semibold">
       <div className=" h-[280px] bg-gradient-to-r from-[#429690] to-[#2A7C76] w-full clip-path-circle ">
         <div className="flex justify-between items-center px-5 bg-groupimg bg-no-repeat h-[200px] text-white">
           <div className="flex flex-col items-start ">
@@ -36,7 +36,7 @@ const TransactionDetails = () => {
         </div>
       </div>
       {/* General TransactionDetails */}
-      <div className=" absolute flex flex-col gap-1 items-center top-40  mx-auto rounded-t-[30px] h-[550px] p-6 bg-white text-[#666666] w-full shadow-[0_10px_20px_0_#00000038]">
+      <div className=" absolute flex flex-col gap-1 items-center top-40  mx-auto rounded-t-[30px] h-[650px] p-6 bg-white text-[#666666] w-full shadow-[0_10px_20px_0_#00000038]">
         <div className="">
           <img
             src={woman}

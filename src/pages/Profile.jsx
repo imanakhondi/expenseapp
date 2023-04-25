@@ -12,7 +12,7 @@ import diamond from "../images/diamond (dark).png";
 import Footer from "../components/Footer";
 const Profile = () => {
   return (
-    <div className=" relative w-96 h-[790px] flex flex-col items-center bg-white font-semibold">
+    <div className=" relative w-[420px] h-[890px] flex flex-col items-center bg-white font-semibold">
       <div className=" h-[280px] bg-gradient-to-r from-[#429690] to-[#2A7C76] w-full clip-path-circle ">
         <div className="flex justify-between items-center px-5 bg-groupimg bg-no-repeat h-[200px] text-white">
           <div className="flex flex-col items-start ">
@@ -43,7 +43,7 @@ const Profile = () => {
         </div>
       </div>
       {/* Setting */}
-      <ul className="w-full mt-32 mb-20 px-5 h-[300px] ">
+      <ul className="w-full mt-32 mb-20 px-5 h-[400px] ">
         <li className="flex items-center mb-3 border-b pb-3 ">
           <div className="w-8 h-8 bg-[#F0F6F5] rounded-full flex items-center justify-center">
             <img src={diamond} alt="" className="w-6 h-6" />

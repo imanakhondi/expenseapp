@@ -50,7 +50,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className=" relative w-96 h-[790px] flex flex-col items-center bg-white font-semibold">
+    <div className=" relative w-[420px] h-[890px] flex flex-col items-center bg-white font-semibold">
       <div className=" h-[280px] bg-gradient-to-r from-[#429690] to-[#2A7C76] w-full clip-path-circle ">
         <div className="flex justify-between items-center px-5 bg-groupimg bg-no-repeat h-[200px] text-white">
           <div className="flex flex-col items-start ">
@@ -95,7 +95,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* Transactions history */}
-      <div className="w-full mt-32 mb-20 px-5 h-[300px] overflow-auto">
+      <div className="w-full mt-32 mb-20 px-5 h-[400px] overflow-auto">
         <div className="flex items-center justify-between mb-3 ">
           <p className="font-bold text-lg text-[#222222]">
             Transactions history
