@@ -47,7 +47,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className=" relative w-[420px] h-[890px] flex flex-col items-center bg-white font-semibold">
+    <div className=" relative w-[420px] flex flex-col items-center bg-white font-semibold">
       <div className=" h-[280px] bg-gradient-to-r from-[#429690] to-[#2A7C76] w-full clip-path-circle ">
         <div className="flex justify-between items-center px-5 bg-groupimg bg-no-repeat h-[200px] text-white">
           <div className="flex flex-col items-start ">
@@ -60,7 +60,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* General expenses and income */}
-      <div className=" absolute flex flex-col justify-evenly top-36 h-[200px] w-[350px] mx-auto rounded-xl bg-[#2F7E79] p-3 text-white shadow-[0px_12px_19px_0px_#3E7C78;]">
+      <div className=" absolute flex flex-col justify-evenly top-36 h-[200px] w-[350px] mx-auto rounded-xl bg-[#2F7E79] p-3 text-white shadow-[0px_12px_19px_0px_#3e7c787d]">
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-start">
             <p className="font-semibold">Total Balance</p>
