@@ -8,7 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <ul className="flex items-center text-[#aaaaaa] justify-around fixed bottom-0 h-20 shadow-[0_-2px_5px_0_#ccc] w-full bg-white">
+    <ul className="flex items-center text-[#aaaaaa] justify-around fixed bottom-0 h-20 shadow-[0_-2px_5px_0_#ccc] w-[420px] bg-white">
       <NavLink
         to="/panel/home"
         className={(navdata) => {
