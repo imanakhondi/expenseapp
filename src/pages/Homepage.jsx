@@ -109,7 +109,6 @@ const Homepage = () => {
               <Link
                 to={`/panel/transactionDetails/${transaction.id}`}
                 key={transaction.id}
-                target="_blank"
               >
                 <div className="flex items-center justify-between p-2 rounded-lg mb-3 bg-[#FBFBFB] hover:bg-[#29756F] hover:shadow-[0px_12px_19px_0px_#3E7C78] transition-all group  ">
                   <div className="flex flex-col items-start group-hover:text-white ">
@@ -129,7 +128,6 @@ const Homepage = () => {
               <Link
                 to={`/panel/transactionDetails/${transaction.id}`}
                 key={transaction.id}
-                target="_blank"
               >
                 <div className="flex items-center justify-between p-2 rounded-lg mb-3 bg-[#FBFBFB] hover:bg-[#29756F] hover:shadow-[0px_12px_19px_0px_#3E7C78] transition-all group  ">
                   <div className="flex flex-col items-start">

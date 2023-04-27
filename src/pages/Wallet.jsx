@@ -1,4 +1,4 @@
-import { MdAdd,  MdQrCode } from "react-icons/md";
+import { MdAdd, MdQrCode } from "react-icons/md";
 import { BsSendFill, BsThreeDots } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -29,9 +29,8 @@ const Wallet = () => {
   };
 
   return (
-   
     <>
-    <Header title="Wallet" icon={<BsThreeDots size={22} />} />
+      <Header title="Wallet" icon={<BsThreeDots size={22} />} />
       <div className=" absolute flex flex-col  items-center top-40  mx-auto rounded-2xl h-[600px] p-3 bg-white text-[#666666] w-[350px] shadow-[0_10px_20px_0_#00000038]">
         <div>
           <p className="text-[#666666] font-normal mt-3">Total Balance</p>
@@ -90,7 +89,6 @@ const Wallet = () => {
                   <Link
                     to={`/panel/transactionDetails/${transaction.id}`}
                     key={transaction.id}
-                    target="_blank"
                   >
                     <div className="flex items-center justify-between p-2 rounded-lg mb-3 bg-[#FBFBFB] hover:bg-[#29756F] hover:shadow-[0px_12px_19px_0px_#3E7C78] transition-all group  ">
                       <div className="flex flex-col items-start group-hover:text-white ">
@@ -110,7 +108,6 @@ const Wallet = () => {
                   <Link
                     to={`/panel/transactionDetails/${transaction.id}`}
                     key={transaction.id}
-                    target="_blank"
                   >
                     <div className="flex items-center justify-between p-2 rounded-lg mb-3 bg-[#FBFBFB] hover:bg-[#29756F] hover:shadow-[0px_12px_19px_0px_#3E7C78] transition-all group  ">
                       <div className="flex flex-col items-start">
